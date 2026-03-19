@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bakery Tech | Loja de Bolos</title>
+    <title>sla titulo, só pro trabalho</title>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -19,14 +19,14 @@
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
 
         body { 
-            background: linear-gradient(135deg, #fff5f7 0%, #f0f4ff 100%);
+            background-color: #ee4bd8be;
             color: var(--text-main);
             line-height: 1.6;
         }
 
-        /* Header e Navegação */
+    
         header {
-            background-color: white;
+            background-color: rgba(212, 131, 192, 0.342);
             padding: 40px 20px;
             text-align: center;
             border-bottom: 2px solid var(--pastel-pink);
@@ -40,7 +40,7 @@
         }
 
         nav {
-            background: var(--white-glass);
+            background: rgb(206, 120, 173);
             backdrop-filter: blur(10px);
             padding: 15px;
             position: sticky;
@@ -70,7 +70,6 @@
             font-weight: 600;
         }
 
-        /* Carrossel Estilizado */
         .carousel-container {
             padding: 40px 0;
             background: rgba(255, 255, 255, 0.4);
@@ -97,7 +96,7 @@
         .carousel-item:hover { transform: scale(1.02); }
 
         .carousel-item span {
-            background: rgba(255,255,255,0.9);
+            background: rgba(199, 75, 106, 0.76);
             width: 100%;
             padding: 15px;
             text-align: center;
@@ -145,7 +144,7 @@
 
         .btn-buy:hover { background: #d81b60; letter-spacing: 1px; }
 
-        /* Carrinho Lateral */
+                                    
         #cart-sidebar {
             position: fixed;
             right: -400px;
@@ -183,12 +182,9 @@
             animation: slideUp 0.4s ease;
         }
 
-        @keyframes slideUp {
-            from { transform: translateY(50px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
-        }
+      
 
-        /* Admin Panel */
+        
         #admin-panel { display: none; padding: 50px; max-width: 1000px; margin: 0 auto; }
         .order-card { background: white; padding: 20px; border-radius: 15px; margin-bottom: 15px; border-left: 5px solid var(--deep-pink); }
 
@@ -199,7 +195,7 @@
 
 <header>
     <h1>Loja para Trabalho de Programação</h1>
-    <p>Tecnologia e Doçura em cada detalhe</p>
+    <p>Tecnologia e Doçura em cada pedaçu do bolu  </p>
 </header>
 
 <nav>
@@ -251,11 +247,11 @@
 
 <script>
     const products = [
-        { id: 1, name: "Velvet de Frutas", price: 85.00, desc: "Massa aveludada com frutas silvestres e creme suave.", img: "https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=600" },
-        { id: 2, name: "Naked Cake Choco", price: 70.00, desc: "O rústico que amamos com ganache de chocolate belga.", img: "https://images.unsplash.com/photo-1578985543062-d97adad20844?w=600" },
-        { id: 3, name: "Tropical Lemon", price: 65.00, desc: "Mousse de limão siciliano com base amanteigada.", img: "https://images.unsplash.com/photo-1519340333755-56e9c1d04579?w=600" },
-        { id: 4, name: "Berry Delight", price: 95.00, desc: "Massa branca fofinha coberta com as melhores berries.", img: "https://images.unsplash.com/photo-1586788680434-30d324671ff6?w=600" },
-        { id: 5, name: "Caramelo Salgado", price: 75.00, desc: "Combinação perfeita de doce com um toque de sal marinho.", img: "https://images.unsplash.com/photo-1535141192574-5d4897c12636?w=600" }
+        { id: 1, name: "bolinhu de flutas", price: 85.00, desc: "Massa aveludada com frutas silvestres e creme suave.", img: "https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=600" },
+        { id: 2, name: "Outo bolinhu", price: 70.00, desc: "O rústico que amamos com ganache de chocolate belga.", img: "https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=600" },
+        { id: 3, name: "bulinho tropical Lemon", price: 65.00, desc: "Mousse de limão siciliano com base amanteigada.", img: "https://images.unsplash.com/photo-1519340333755-56e9c1d04579?w=600" },
+        { id: 4, name: "Berry Delight", price: 95.00, desc: "Massa branca fofinha coberta com as melhores berries.", img: "https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=600" },
+        { id: 5, name: "polinhu com caramelo salgado", price: 75.00, desc: "Combinação perfeita de doce com um toque de sal marinho.", img: "https://images.unsplash.com/photo-1535141192574-5d4897c12636?w=600" }
     ];
 
     let cart = [];
